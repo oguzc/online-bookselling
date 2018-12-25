@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  onlinebookselling:
+    image: ${DOCKER_REGISTRY}onlinebookselling
+    build:
+      context: .
+      dockerfile: OnlineBookselling/Dockerfile
