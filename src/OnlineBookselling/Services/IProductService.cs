@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using OnlineBookselling.ViewModels;
 
 namespace OnlineBookselling.Services
 {
     public interface IProductService
     {
-
+        IProductViewModel GetProduct(long productId);
+        ISearchViewModel Search(string searchTerm);
     }
 }

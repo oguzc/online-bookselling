@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using OnlineBookselling.ViewModels;
 using OnlineBookselling.Services;
@@ -24,15 +20,16 @@ namespace OnlineBookselling.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index([FromForm]string model)
+        public IActionResult Index([FromForm]ISearchViewModel model)
         {
-            return View();
+            var searchViewModel = _productService.Search(model.SearchTerm);
+            return View(searchViewModel);
         }
 
-        public IActionResult Book(int bookId)
+        public IActionResult Product(long productId)
         {
-            var book = _productService.GetBookById(bookId);
-            return View(book);
+            var productViewModel = _productService.GetProduct(productId);
+            return View(productViewModel);
         }
 
         public IActionResult About()
