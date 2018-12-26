@@ -16,7 +16,7 @@ namespace OnlineBookselling.Controllers
             _orderService = orderService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int productId)
         {
             return View();
         }
