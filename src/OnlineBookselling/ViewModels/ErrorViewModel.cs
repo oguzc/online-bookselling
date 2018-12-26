@@ -1,6 +1,4 @@
-using System;
-
-namespace OnlineBookselling.Models
+namespace OnlineBookselling.ViewModels
 {
     public class ErrorViewModel
     {
