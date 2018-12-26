@@ -16,34 +16,20 @@ namespace OnlineBookselling.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(new NullSearchViewModel());
         }
 
         [HttpPost]
-        public IActionResult Index([FromForm]ISearchViewModel model)
+        public IActionResult Index([FromForm]SearchViewModel model)
         {
             var searchViewModel = _productService.Search(model.SearchTerm);
             return View(searchViewModel);
         }
 
-        public IActionResult Product(long productId)
+        public IActionResult Product(int productId)
         {
             var productViewModel = _productService.GetProduct(productId);
             return View(productViewModel);
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
         }
 
         public IActionResult Error()

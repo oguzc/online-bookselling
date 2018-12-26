@@ -1,0 +1,51 @@
+{
+  "product": [
+    {
+      "name": "Değirmen",
+      "description": "İşte adaşım, sana seven bir Çingene''nin hikayesi. Çiçeklerin açtığı bir mevsimde, senin kollarına yaslanan ve çiçekler kadar güzel kokan bir vücutla uzak su kenarlarında oturtmak ve öpüşmek, yoruluncaya kadar öpüşmek hoş şeydir... Fakat sevgili bir vücutta bulunmayan bir şeyi kendisinde taşımaya tahammül etmeyerek onu koparıp atabilmek, işte adaşım, yalnız bu sevmektir.",
+      "productType": 0,
+      "author": {
+        "name": "Sabahattin",
+        "surname": "Ali",
+        "fullName": "Sabahattin Ali"
+      },
+      "Id": 1
+    },
+    {
+      "name": "Kürk Mantolu Madonna",
+      "description": "Her gün, daima öğleden sonra oraya gidiyor, koridorlardaki resimlere bakıyormuş gibi ağır ağır, fakat büyük bir sabırsızlıkla asıl hedefine varmak isteyen adımlarımı zorla zapt ederek geziniyor, rastgele gözüme çarpmış gibi önünde durduğum Kürk Mantolu Madonnayı seyre dalıyor, ta kapılar kapanıncaya kadar orada bekliyoKimi tutkular rehberimiz olur yaşam boyunca. Kollarıyla bizi sarar. Sorgulamadan peşlerinden gideriz ve hiç pişman olmayacağımızı biliriz. Yapıtlarında insanların görünmeyen yüzlerini ortaya çıkaran Sabahattin Ali, bu kitabında güçlü bir tutkunun resmini çiziyor. Düzenin sildiği kişiliklere, yaşamın uçuculuğuna ve aşkın olanaksızlığına (?) dair, yanıtlanması zor sorular soruyor.",
+      "productType": 0,
+      "author": {
+        "name": "Sabahattin",
+        "surname": "Ali",
+        "fullName": "Sabahattin Ali"
+      },
+      "Id": 2
+    },
+    {
+      "name": "Sol Ayağım",
+      "description": "İrlandalı yazar Christy Brown’un 1954 yılında kaleme aldığı ve dünyanın en iyi otobiyografi kitaplarından biri olarak kabul edilen Sol Ayağım, aynı zamanda bir kişisel gelişim kitabı olma özelliği taşıyor. Christy Brown kendi otobiyografisini yazdığı bu kitapta, sol ayağıyla kalem tutmayı nasıl başardığını, anne ve babasının yardımıyla hayata nasıl tutunduğunu, karşısındaki tüm engelleri nasıl aştığını anlatıyor. Sunday Times’ın “Erdemli ve hiçbir şekilde yozlaştırılmamış bir cesaret hikâyesi” olarak vurguladığı kitap, çok satanlar listesinde uzun dönem kalmayı başarıyor.",
+      "productType": 0,
+      "author": {
+        "name": "Christy",
+        "surname": "Brown",
+        "fullName": "Christy Brown"
+      },
+      "Id": 3
+    },
+    {
+      "name": "Kitap Ayracı Mavi",
+      "description": null,
+      "productType": 1,
+      "author": null,
+      "Id": 4
+    },
+    {
+      "name": "Kitap Ayracı Siyah",
+      "description": null,
+      "productType": 1,
+      "author": null,
+      "Id": 5
+    }
+  ]
+}

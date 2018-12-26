@@ -6,7 +6,7 @@ namespace OnlineBookselling.Services.Implementation
 {
     public class ProductService : IProductService
     {
-        public IProductViewModel GetProduct(long productId)
+        public IProductViewModel GetProduct(int productId)
         {
             IProductViewModel productViewModel;
             var product = ProductRepository.Instance.GetById(productId);

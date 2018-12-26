@@ -4,7 +4,7 @@ namespace OnlineBookselling.Services
 {
     public interface IProductService
     {
-        IProductViewModel GetProduct(long productId);
+        IProductViewModel GetProduct(int productId);
         ISearchViewModel Search(string searchTerm);
     }
 }

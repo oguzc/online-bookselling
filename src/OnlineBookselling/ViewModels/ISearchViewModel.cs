@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using OnlineBookselling.Models;
 
 namespace OnlineBookselling.ViewModels
 {
@@ -10,12 +11,14 @@ namespace OnlineBookselling.ViewModels
 
     public class SearchProduct
     {
-        public SearchProduct(string name, string authorFullName)
+        public SearchProduct(Product product)
         {
-            Name = name;
-            AuthorFullName = authorFullName;
+            Id = product.Id;
+            Name = product.Name;
+            AuthorFullName = product.Author?.FullName;
         }
 
+        public long Id { get; private set; }
         public string Name { get; private set; }
         public string AuthorFullName { get; private set; }
     }

@@ -1,0 +1,22 @@
+﻿@model OnlineBookselling.ViewModels.IProductViewModel
+
+@{
+    ViewData["Title"] = "Kitapcim.com";
+}
+
+<div>
+    <h2>
+        @Html.DisplayFor(model => model.Name)
+    </h2>
+    <h4>
+        @Html.DisplayFor(model => model.AuthorFullName)
+    </h4>
+    <span>
+        @Html.DisplayFor(model => model.Description)
+    </span>
+</div>
+<br />
+<div>
+    @Html.ActionLink("Buy", "Index", "Order", new { productId = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>

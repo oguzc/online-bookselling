@@ -12,6 +12,8 @@ namespace OnlineBookselling.Adapters
             this.product = product;
         }
 
+        public int Id => product.Id;
+
         public string Name => product.Name;
 
         public string Description => product.Description;

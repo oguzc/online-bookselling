@@ -14,7 +14,7 @@ namespace OnlineBookselling.Adapters
             this.products = products;
         }
 
-        public List<SearchProduct> Products => products.Select(_ => new SearchProduct(_.Name, _.Author?.FullName)).ToList();
+        public List<SearchProduct> Products => products.Select(product => new SearchProduct(product)).ToList();
 
         public string SearchTerm { get => string.Empty; set => SearchTerm = value; }
     }
